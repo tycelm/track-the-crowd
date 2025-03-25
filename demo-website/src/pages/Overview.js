@@ -87,26 +87,24 @@ const Overview = () => {
         }}
         style={{
           position: "absolute",
-          top: "70vh",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
           width: "fit-content",
           height: "7vh",
           cursor: "pointer",
           background: "transparent",
           border: "none",
-          color: "#ffcc00",
+          color: "#fff",
           fontSize: "clamp(3vh, 2vw, 3vw)",
+          fontWeight: "bold",
           transition: "font-size 0.3s ease-in-out", // Smooth transition
         }}
       >
-        Or click to go back ⬅️
+        Click to go back ⬅️
       </button>
 
       {/* Hello noelle put ur text here */}
       <div style={{ color: "#fff", fontSize: "2rem" }}>
         <img
-          src={`${process.env.PUBLIC_URL}/backgrounds/placeholder.jpg`}
+          src={`${process.env.PUBLIC_URL}/backgrounds/overview.jpg`}
           style={{ objectFit: "contain", width: "100vw" }}
         ></img>
         <div style={{ margin: "5rem" }}>

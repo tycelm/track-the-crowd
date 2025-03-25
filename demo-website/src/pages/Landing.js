@@ -84,7 +84,7 @@ const Landing = () => {
     { label: "Overview", top: "20vh" },
     { label: "Demo", top: "40vh" },
     { label: "Timeline", top: "60vh", highlight: true },
-    { label: "Contact", top: "80vh" },
+    { label: "Links", top: "80vh" },
   ];
 
   return (

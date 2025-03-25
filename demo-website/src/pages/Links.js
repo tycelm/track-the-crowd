@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Contact = () => {
+const Links = () => {
   const [enter, setEnter] = useState(true);
   const [leave, setLeave] = useState(false);
 
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.title = "Contact";
+    document.title = "Links";
     document.body.style.overflowX = "auto";
 
     setTimeout(() => {
@@ -87,26 +87,24 @@ const Contact = () => {
         }}
         style={{
           position: "absolute",
-          top: "70vh",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
           width: "fit-content",
           height: "7vh",
           cursor: "pointer",
           background: "transparent",
           border: "none",
-          color: "#ffcc00",
+          color: "#fff",
           fontSize: "clamp(3vh, 2vw, 3vw)",
+          fontWeight: "bold",
           transition: "font-size 0.3s ease-in-out", // Smooth transition
         }}
       >
-        Or click to go back ⬅️
+        Click to go back ⬅️
       </button>
 
       {/* Hello noelle put ur text here */}
       <div style={{ color: "#fff", fontSize: "2rem" }}>
         <img
-          src={`${process.env.PUBLIC_URL}/backgrounds/placeholder.jpg`}
+          src={`${process.env.PUBLIC_URL}/backgrounds/links.jpg`}
           style={{ objectFit: "contain", width: "100vw" }}
         ></img>
         <div style={{ margin: "5rem" }}>
@@ -120,4 +118,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Links;
