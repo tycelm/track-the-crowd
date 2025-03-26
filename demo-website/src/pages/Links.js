@@ -101,7 +101,7 @@ const Links = () => {
         Click to go back ⬅️
       </button>
 
-      {/* Hello noelle put ur text here */}
+      {/* Text */}
       <div style={{ color: "#fff", fontSize: "2rem" }}>
         <img
           src={`${process.env.PUBLIC_URL}/backgrounds/links.jpg`}
@@ -109,9 +109,8 @@ const Links = () => {
         ></img>
         <div style={{ margin: "5rem" }}>
           {" "}
-          <h1 style={{ textAlign: "center" }}>TITLE</h1>
-          <h1 style={{ textAlign: "center" }}>TITLE</h1>
-          <p>I am a paragraph weweeeweee</p>
+          <h1 style={{ textAlign: "center" }}>DEMO</h1>
+          <p>Stay tuned!</p>
         </div>
       </div>
     </div>
