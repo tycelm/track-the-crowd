@@ -101,7 +101,7 @@ const Links = () => {
         Click to go back ⬅️
       </button>
 
-      {/* Hello noelle put ur text here */}
+      {/* Text */}
       <div style={{ color: "#fff", fontSize: "2rem" }}>
         <img
           src={`${process.env.PUBLIC_URL}/backgrounds/links.jpg`}
@@ -109,9 +109,28 @@ const Links = () => {
         ></img>
         <div style={{ margin: "5rem" }}>
           {" "}
-          <h1 style={{ textAlign: "center" }}>TITLE</h1>
-          <h1 style={{ textAlign: "center" }}>TITLE</h1>
-          <p>I am a paragraph weweeeweee</p>
+          <h1 style={{ textAlign: "center" }}>CONTACT</h1>
+          <p>Connect with our group:
+            <div><a style={{color: "#D0251D"}}  href="https://www.linkedin.com/in/jin-lina/">Lina Jin</a></div>
+            <div><a style={{color: "#D0251D"}}  href="https://www.linkedin.com/in/noelle-akira-ransom/">Noelle Ransom</a></div>
+            <div><a style={{color: "#D0251D"}}  href="https://www.linkedin.com/in/ming-hin-joshua-li-99a0a0231/">Joshua Li</a></div>
+            <div><a style={{color: "#D0251D"}}  href="https://www.linkedin.com/in/maksym-woychyshyn-a14836197/">Max Woychyshyn</a></div>
+          </p>
+
+          <p>If you're interested in our project between now and the end of April 2025, please don't hesitate to reach out to us!
+            <div><a
+              style={{color: "#D0251D"}} 
+              href="mailto:lina.jin@mail.utoronto.ca;noelle.ransom@mail.utoronto.ca;minghinjoshua.li@mail.utoronto.ca;m.woychyshyn@mail.utoronto.ca">
+              Send us an email!
+            </a></div>
+          </p>
+
+          <h1 style={{ textAlign: "center" }}>PAST PRESENTATION MATERIALS</h1>
+          <a
+            style={{color: "#D0251D"}} 
+            href="https://www.canva.com/design/DAGheX3qJbw/0CwghlaoyjnsDGj5C_BGcQ/edit?utm_content=DAGheX3qJbw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+            Presentation for the TTC
+          </a>
         </div>
       </div>
     </div>
