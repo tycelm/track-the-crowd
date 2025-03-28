@@ -110,25 +110,62 @@ const Links = () => {
         <div style={{ margin: "5rem" }}>
           {" "}
           <h1 style={{ textAlign: "center" }}>CONTACT</h1>
-          <p>Connect with our group:
-            <div><a style={{color: "#D0251D"}}  href="https://www.linkedin.com/in/jin-lina/">Lina Jin</a></div>
-            <div><a style={{color: "#D0251D"}}  href="https://www.linkedin.com/in/noelle-akira-ransom/">Noelle Ransom</a></div>
-            <div><a style={{color: "#D0251D"}}  href="https://www.linkedin.com/in/ming-hin-joshua-li-99a0a0231/">Joshua Li</a></div>
-            <div><a style={{color: "#D0251D"}}  href="https://www.linkedin.com/in/maksym-woychyshyn-a14836197/">Max Woychyshyn</a></div>
+          <p>
+            Connect with our group:
+            <div>
+              <a
+                style={{ color: "#D0251D" }}
+                href="https://www.linkedin.com/in/jin-lina/"
+                target="_blank"
+              >
+                Lina Jin
+              </a>
+            </div>
+            <div>
+              <a
+                style={{ color: "#D0251D" }}
+                href="https://www.linkedin.com/in/noelle-akira-ransom/"
+                target="_blank"
+              >
+                Noelle Ransom
+              </a>
+            </div>
+            <div>
+              <a
+                style={{ color: "#D0251D" }}
+                href="https://www.linkedin.com/in/ming-hin-joshua-li-99a0a0231/"
+                target="_blank"
+              >
+                Joshua Li
+              </a>
+            </div>
+            <div>
+              <a
+                style={{ color: "#D0251D" }}
+                href="https://www.linkedin.com/in/maksym-woychyshyn-a14836197/"
+                target="_blank"
+              >
+                Max Woychyshyn
+              </a>
+            </div>
           </p>
-
-          <p>If you're interested in our project between now and the end of April 2025, please don't hesitate to reach out to us!
-            <div><a
-              style={{color: "#D0251D"}} 
-              href="mailto:lina.jin@mail.utoronto.ca;noelle.ransom@mail.utoronto.ca;minghinjoshua.li@mail.utoronto.ca;m.woychyshyn@mail.utoronto.ca">
-              Send us an email!
-            </a></div>
+          <p>
+            If you're interested in our project between now and the end of April
+            2025, please don't hesitate to reach out to us!
+            <div>
+              <a
+                style={{ color: "#D0251D" }}
+                href="mailto:lina.jin@mail.utoronto.ca;noelle.ransom@mail.utoronto.ca;minghinjoshua.li@mail.utoronto.ca;m.woychyshyn@mail.utoronto.ca"
+              >
+                Send us an email!
+              </a>
+            </div>
           </p>
-
           <h1 style={{ textAlign: "center" }}>PAST PRESENTATION MATERIALS</h1>
           <a
-            style={{color: "#D0251D"}} 
-            href="https://www.canva.com/design/DAGheX3qJbw/0CwghlaoyjnsDGj5C_BGcQ/edit?utm_content=DAGheX3qJbw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+            style={{ color: "#D0251D" }}
+            href="https://www.canva.com/design/DAGheX3qJbw/0CwghlaoyjnsDGj5C_BGcQ/edit?utm_content=DAGheX3qJbw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+          >
             Presentation for the TTC
           </a>
         </div>
