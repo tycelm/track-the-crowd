@@ -37,7 +37,22 @@ const timeStamps = [
       
       We've also been hard at work creating a cardboard model of a TTC car. We will be using this to simulate a TTC train environment for our image recognition model.
 
-      Joshua is holding two metal poles, what could they be for? Stay tuned to find out!
+      Joshua's holding two metal poles, what could they be for? Stay tuned to find out!
+    `,
+  },  
+  { label: "Model Test 1", 
+    pic: `${process.env.PUBLIC_URL}/backgrounds/test1.png`,
+    desc: 
+    `
+      March 27, 2025
+      
+      We began testing the image recognition model on real cardboard.
+
+      While this model was successful on the image of cardboard as shown here, it had a lot of trouble identifying cardboard in real life.
+
+      There also seems to be an issue with the compatibility of our webcam and the library we used to capture camera frames.
+
+      We will be tweaking the model and debugging the camera issue before our next lab time.
     `,
   },  
 ];
