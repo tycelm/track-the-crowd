@@ -107,24 +107,59 @@ const Overview = () => {
           src={`${process.env.PUBLIC_URL}/backgrounds/overview.jpg`}
           style={{ objectFit: "contain", width: "100vw" }}
         ></img>
-        <div style={{ margin: "5rem", lineHeight: "1.8" }}>
+        <div style={{ margin: "10rem", lineHeight: "1.8" }}>
           {" "}
           <h1 style={{ textAlign: "center" }}>OUR PURPOSE</h1>
           <p>Hi there!</p>
-          <p>We're a team of four computer science students at the University of Toronto.</p>
-          <p>For completion of our Capstone Design Project (CSC490), we've been tasked to create something that serves a social good.</p>
-          <p>Our group aims to better control congestion throughout TTC subway services, creating a safer environment for commuters and operators alike.</p>
-          
+          <p>
+            We're a team of four computer science students at the University of
+            Toronto.
+          </p>
+          <p>
+            For completion of our Capstone Design Project (CSC490), we've been
+            tasked to create something that serves a social good.
+          </p>
+          <p>
+            Our group aims to better control congestion throughout TTC subway
+            services, creating a safer environment for commuters and operators
+            alike.
+          </p>
           <h1 style={{ textAlign: "center" }}>THE PROBLEM</h1>
-          <p>To keep up with the sheer number of people taking the TTC every day, it's vital that trains are getting as many people as safely possible to their destinations.</p>
-          <p>However, in its current state, it's incredibly difficult for trains to reach their maximum capacity.</p>
-          <p>Commuters have no idea which train cars have room for them until the train arrives at the platform, at which point many do not have the time to reach emptier train cars.</p>
-          <p>This leads to proportionally underutilized cars leaving stations and customers experiencing longer wait times as they wait for future trains.</p>
-
+          <p>
+            To keep up with the sheer number of people taking the TTC every day,
+            it's vital that trains are getting as many people as safely possible
+            to their destinations.
+          </p>
+          <p>
+            However, in its current state, it's incredibly difficult for trains
+            to reach their maximum capacity.
+          </p>
+          <p>
+            Commuters have no idea which train cars have room for them until the
+            train arrives at the platform, at which point many do not have the
+            time to reach emptier train cars.
+          </p>
+          <p>
+            This leads to proportionally underutilized cars leaving stations and
+            customers experiencing longer wait times as they wait for future
+            trains.
+          </p>
           <h1 style={{ textAlign: "center" }}>OUR SOLUTION</h1>
-          <p>We would like to install a single camera on the platform level to capture the inside of subway cars as they leave the station.</p>
-          <p>We'd then feed this data through an image recognition model to measure crowd densities on a per-car level, communicating these projections to commuters waiting for the train at the following station.</p>
-          <p>We hope this gives customers ample time to adjust their location on the platform in preparation for the train, allowing the subway to be used most comfortably and effectively.</p>
+          <p>
+            We would like to install a single camera on the platform level to
+            capture the inside of subway cars as they leave the station.
+          </p>
+          <p>
+            We'd then feed this data through an image recognition model to
+            measure crowd densities on a per-car level, communicating these
+            projections to commuters waiting for the train at the following
+            station.
+          </p>
+          <p>
+            We hope this gives customers ample time to adjust their location on
+            the platform in preparation for the train, allowing the subway to be
+            used most comfortably and effectively.
+          </p>
         </div>
       </div>
     </div>

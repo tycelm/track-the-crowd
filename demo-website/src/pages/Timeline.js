@@ -3,7 +3,7 @@ import timeStamps from "../components/Timestamp";
 import { useNavigate } from "react-router-dom";
 
 const Timeline = () => {
-  const lineWidth = 110; // Subway line width
+  const lineWidth = 120; // Subway line width
   const buttonSize = 110; // Circle size in px
   const [scrollLeftActive, setScrollLeftActive] = useState(false);
   const [scrollRightActive, setScrollRightActive] = useState(false);
@@ -96,7 +96,9 @@ const Timeline = () => {
         }}
       >
         <h1>Our Timeline</h1>
-        <p>Scroll horizontally to learn more!</p>
+        <p style={{ fontSize: "clamp(3vh, 2vw, 3vw)" }}>
+          Scroll horizontally to learn more!
+        </p>
         <button
           onClick={() => handleReturn()}
           onMouseOver={(e) => {
@@ -143,6 +145,7 @@ const Timeline = () => {
             onClick={() => setActiveDesc(null)}
             style={{
               marginTop: "20px",
+              marginBottom: "20px",
               padding: "10px 20px",
               fontSize: "2rem",
               backgroundColor: "#920092",
@@ -279,7 +282,7 @@ const Timeline = () => {
         ref={scrollContainerRef}
         style={{
           position: "absolute",
-          top: "60vh",
+          top: "60.5vh",
           width: "100vw", // Fixed to viewport width
           overflowX: "auto", // Enables horizontal scroll
           whiteSpace: "nowrap",
@@ -316,16 +319,16 @@ const Timeline = () => {
               onMouseOver={(e) => {
                 const circleElement = e.currentTarget.querySelector(".circle");
                 circleElement.style.backgroundColor = "#fff346";
-                circleElement.style.boxShadow = "0 0 15px #ffd11a";
+                // circleElement.style.boxShadow = "0 0 15px #ffd11a";
                 const labelElement = e.currentTarget.querySelector(".label");
-                labelElement.style.fontSize = "clamp(4vh, 4vw, 20vw)";
+                labelElement.style.fontSize = "clamp(4vh, 3.5vw, 20vw)";
               }}
               onMouseOut={(e) => {
                 const circleElement = e.currentTarget.querySelector(".circle");
                 circleElement.style.backgroundColor = "#fff";
-                circleElement.style.boxShadow = "none";
+                // circleElement.style.boxShadow = "none";
                 const labelElement = e.currentTarget.querySelector(".label");
-                labelElement.style.fontSize = "clamp(4vh, 3vw, 20vw)";
+                labelElement.style.fontSize = "clamp(4vh, 2.5vw, 20vw)";
               }}
             >
               <button
@@ -343,7 +346,7 @@ const Timeline = () => {
                   color: "white",
                   border: "none",
                   background: "transparent",
-                  fontSize: "clamp(4vh, 3vw, 20vw)",
+                  fontSize: "clamp(4vh, 2.5vw, 20vw)",
                   fontWeight: "bold",
                   transition: "font-size 0.3s",
                 }}

@@ -107,9 +107,9 @@ const Links = () => {
           src={`${process.env.PUBLIC_URL}/backgrounds/links.jpg`}
           style={{ objectFit: "contain", width: "100vw" }}
         ></img>
-        <div style={{ margin: "5rem" }}>
+        <div style={{ margin: "10rem", textAlign: "center" }}>
           {" "}
-          <h1 style={{ textAlign: "center" }}>CONTACT</h1>
+          <h1>CONTACT</h1>
           <p>
             Connect with our group:
             <div>
@@ -149,9 +149,10 @@ const Links = () => {
               </a>
             </div>
           </p>
+          <br />
           <p>
-            If you're interested in our project between now and the end of April
-            2025, please don't hesitate to reach out to us!
+            If you're interested in our project, please don't hesitate to reach
+            out to us!
             <div>
               <a
                 style={{ color: "#D0251D" }}
@@ -161,13 +162,6 @@ const Links = () => {
               </a>
             </div>
           </p>
-          <h1 style={{ textAlign: "center" }}>PAST PRESENTATION MATERIALS</h1>
-          <a
-            style={{ color: "#D0251D" }}
-            href="https://www.canva.com/design/DAGheX3qJbw/0CwghlaoyjnsDGj5C_BGcQ/edit?utm_content=DAGheX3qJbw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-          >
-            Presentation for the TTC
-          </a>
         </div>
       </div>
     </div>

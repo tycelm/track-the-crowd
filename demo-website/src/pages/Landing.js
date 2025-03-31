@@ -6,7 +6,7 @@ const Landing = () => {
 
   // Fixed sizes for consistency
   const buttonSize = 110; // Circle size in px
-  const lineWidth = 110; // Subway line width
+  const lineWidth = 120; // Subway line width
   const leftPosition = "70vw";
 
   const [titleStat, setTitleStat] = useState({
@@ -83,7 +83,7 @@ const Landing = () => {
   const circles = [
     { label: "Overview", top: "20vh" },
     { label: "Demo", top: "40vh" },
-    { label: "Timeline", top: "60vh", highlight: true },
+    { label: "Timeline", top: "60.5vh", highlight: true },
     { label: "Links", top: "80vh" },
   ];
 
@@ -216,7 +216,7 @@ const Landing = () => {
               className="circle"
               style={{
                 position: "absolute",
-                left: `calc(${leftPosition} + 55px)`, // Always aligned on the line
+                left: `calc(${leftPosition} + 60px)`, // Always aligned on the line
                 top: circle.top,
                 width: `${buttonSize}px`,
                 height: `${buttonSize}px`,
@@ -248,7 +248,7 @@ const Landing = () => {
                 position: "absolute",
                 top: `calc(${circle.top} + 5vh)`,
                 color: "#fff",
-                fontSize: "clamp(6vh, 4vw, 20vw)",
+                fontSize: "clamp(6vh, 3.5vw, 20vw)",
                 fontWeight: "bold",
                 whiteSpace: "nowrap",
                 left: leftPosition,
@@ -262,10 +262,10 @@ const Landing = () => {
                   : "translate(-100%, -50%)",
               }}
               onMouseOver={(e) => {
-                e.target.style.fontSize = "clamp(6vh, 5vw, 20vw)";
+                e.target.style.fontSize = "clamp(6vh, 4vw, 20vw)";
               }}
               onMouseOut={(e) => {
-                e.target.style.fontSize = "clamp(6vh, 4vw, 20vw)";
+                e.target.style.fontSize = "clamp(6vh, 3.5vw, 20vw)";
               }}
             >
               {circle.label}
