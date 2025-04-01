@@ -135,7 +135,7 @@ const Timeline = () => {
             backgroundColor: "#fff",
             color: "#333",
             boxShadow: "0 10px 20px rgba(0,0,0,0.5)",
-            borderRadius: "10px",
+            borderRadius: "30px",
             zIndex: 100,
             textAlign: "left",
             overflowY: "auto",
@@ -153,7 +153,10 @@ const Timeline = () => {
               border: "none",
               cursor: "pointer",
               borderRadius: "5px",
+              transition: "all 0.2s ease-in-out",
             }}
+            onMouseOver={(e) => (e.target.style.opacity = "0.6")}
+            onMouseOut={(e) => (e.target.style.opacity = "1")}
           >
             Close
           </button>
@@ -164,6 +167,7 @@ const Timeline = () => {
                 maxHeight: "60vh", // Prevent the image from being too tall
                 objectFit: "contain", // Ensure the whole image fits without cropping
                 marginBottom: "20px",
+                borderRadius: "0px",
               }}
               src={activeDesc.pic}
               alt={activeDesc.desc}
@@ -171,10 +175,12 @@ const Timeline = () => {
           )}
           <div
             style={{
-              whiteSpace: "pre-wrap", // Preserves new lines and spaces
-              lineHeight: "1.6", // Improves readability
-              fontSize: "1.2rem",
-              fontWeight: "bold",
+              whiteSpace: "pre-wrap",
+              lineHeight: "1.8",
+              fontSize: "1.3rem",
+              fontWeight: "500",
+              letterSpacing: "0.5px",
+              padding: "2vw",
             }}
           >
             {activeDesc.desc}
