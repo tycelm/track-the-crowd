@@ -1,15 +1,26 @@
 const timeStamps = [
   {
     label: "Beginnings",
-    pic: `${process.env.PUBLIC_URL}/backgrounds/group.jpg`,
+    // pic: TODO update with group photo
     desc: `
     February 12, 2025
 
     TrackTheCrowd was officially established!
+    `,
+  },
+  {
+    label: "Cardboard",
+    pic: `${process.env.PUBLIC_URL}/backgrounds/cardboard.jpg`,
+    desc: `
+    March 11, 2025
 
-    Pictured here from left to right is Noelle, Joshua and Lina. Our fourth member, not pictured here, is Max.
+    We purchased cardboard and began assembling our model of a TTC car window.
 
-    Taken on our newly obtained webcam. Thanks Paul!
+    Our demo will work as shown above. 
+    
+    We will use cardboard to recreate a TTC car wall. 
+    We will carry and move a webcam to simulate train movement.
+    An image recognition model will translate the webcam video feed into a crowd density percentage.
     `,
   },
   {
@@ -24,7 +35,18 @@ const timeStamps = [
     `,
   },
   {
-    label: "Construction",
+    label: "Webcam",
+    pic: `${process.env.PUBLIC_URL}/backgrounds/camera.jpg`,
+    desc: `
+      March 17, 2025
+      
+      Paul provided us with a webcam, thanks Paul!
+
+      We will be passing the video feed from this camera into an image recognition model that will identify the number of passengers visible in a single frame/cart.
+    `,
+  },
+  {
+    label: "Construction Teams",
     pic: `${process.env.PUBLIC_URL}/backgrounds/bars.jpeg`,
     desc: `
       March 19, 2025
@@ -49,6 +71,19 @@ const timeStamps = [
       There also seems to be an issue with the compatibility of our webcam and the library we used to capture camera frames.
 
       We will be tweaking the model and debugging the camera issue before our next lab time.
+    `,
+  },
+  {
+    label: "Animation",
+    pic: `${process.env.PUBLIC_URL}/backgrounds/example.gif`,
+    desc: `
+      March 31, 2025
+      
+      The frontend animation component has been completed!
+
+      The animation displays different colours and populations depending on the projected crowd density in each cart.
+
+      Above is a sample animation in which the left cart has a high crowd density and the right cart has moderate crowd density.
     `,
   },
 ];
