@@ -1,11 +1,13 @@
 const timeStamps = [
   {
     label: "Beginnings",
-    // pic: TODO update with group photo
+    pic: `${process.env.PUBLIC_URL}/backgrounds/group.png`,
     desc: `
     February 12, 2025
 
 The TrackTheCrowd project has officially begun!
+
+Pictured here from left to right is Lina, Max, Joshua, and Noelle!
     `,
   },
   {
@@ -84,13 +86,13 @@ Above is a sample animation in which the left cart has a high crowd density and 
     desc: `
       April 1, 2025
       
-      We have completed the cardboard frame of a test TTC train car window! 
+We have completed the cardboard frame of a test TTC train car window! 
 
-      To better test our model with multiple train cars, we plan to make and connect a second train car frame. To better reflect a real-life environment, we will paint the frames.
+To better test our model with multiple train cars, we plan to make and connect a second train car frame. To better reflect a real-life environment, we will paint the frames.
 
-      We also conducted a second test of our image recognition model. This was a resounding success, with the model being able to correctly identify when a train car window is in frame and accurately count the number of passengers in our model train car.
-      
-      Our next model test will incorporate the frontend communication channels as well as a second train car. This test will be recorded and compiled into our demo video. Stay tuned!
+We also conducted a second test of our image recognition model. This was a resounding success, with the model being able to correctly identify when a train car window is in frame and accurately count the number of passengers in our model train car.
+
+Our next model test will incorporate the frontend communication channels as well as a second train car. This test will be recorded and compiled into our demo video. Stay tuned!
     `,
   },
 ];
