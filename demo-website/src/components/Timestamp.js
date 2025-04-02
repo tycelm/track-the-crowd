@@ -95,6 +95,19 @@ We also conducted a second test of our image recognition model. This was a resou
 Our next model test will incorporate the frontend communication channels as well as a second train car. This test will be recorded and compiled into our demo video. Stay tuned!
     `,
   },
+  {
+    label: "LED Display",
+    pic: `${process.env.PUBLIC_URL}/backgrounds/led.jpg`,
+    desc: `
+      April 2, 2025
+
+The LED display connection has been configured!
+
+We will be conveying crowd congestion through both colours and emoji faces on an LED strip.
+
+Here, we can see a yellow neutral face on the left to show that the corresponding cart is moderately congested, and the green happy face on the right shows the other cart is empty.
+    `,
+  },
 ];
 
 export default timeStamps;
