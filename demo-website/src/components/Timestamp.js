@@ -108,6 +108,19 @@ We will be conveying crowd congestion through both colours and emoji faces on an
 Here, we can see a yellow neutral face on the left to show that the corresponding cart is moderately congested, and the green happy face on the right shows the other cart is empty.
     `,
   },
+  {
+    label: "Painting",
+    pic: `${process.env.PUBLIC_URL}/backgrounds/painting.jpg`,
+    desc: `
+      April 11, 2025
+
+We finished painting our two models of TTC car windows.
+
+With cart model construction and both front-end and back-end code all complete, we now have everything we need for final testing.
+
+Our demo video is up next. Stay tuned!
+    `,
+  },
 ];
 
 export default timeStamps;
