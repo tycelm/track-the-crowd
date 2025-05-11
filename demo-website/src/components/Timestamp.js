@@ -121,6 +121,19 @@ With cart model construction and both front-end and back-end code all complete, 
 Our demo video is up next. Stay tuned!
     `,
   },
+  {
+    label: "Demo Day!",
+    pic: `${process.env.PUBLIC_URL}/backgrounds/feature.jpg`,
+    desc: `
+      April 25, 2025
+
+We showcased our project in its entirety to the general public!
+
+Lots of people showed up and participated, including our sponsor Naina Dewan.
+
+It was fun seeing all of our hardwork come together and we look forward to what the future might bring!
+    `,
+  },
 ];
 
 export default timeStamps;

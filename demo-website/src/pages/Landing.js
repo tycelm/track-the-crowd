@@ -16,6 +16,7 @@ const Landing = () => {
   });
   const [moveRight, setMoveRight] = useState(true);
   const [moveDown, setMoveDown] = useState(false);
+  const [demoVideo, setDemoVideo] = useState(false);
 
   // Handle resizing to center the layout dynamically
   useEffect(() => {
@@ -74,10 +75,14 @@ const Landing = () => {
   };
 
   const handleNavClick = (path) => {
-    setMoveDown(true);
-    setTimeout(() => {
-      navigate(path);
-    }, 1200);
+    if (path === "/track-the-crowd/demo") {
+      setDemoVideo(true);
+    } else {
+      setMoveDown(true);
+      setTimeout(() => {
+        navigate(path);
+      }, 1200);
+    }
   };
 
   const circles = [
@@ -87,7 +92,59 @@ const Landing = () => {
     { label: "Links", top: "80vh" },
   ];
 
-  return (
+  return demoVideo ? (
+    <div
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100vw",
+        height: "100vh",
+        backgroundColor: "black",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        zIndex: 1000,
+      }}
+    >
+      {/* Exit button */}
+      <button
+        onClick={() => setDemoVideo(false)}
+        aria-label="Close video"
+        style={{
+          position: "absolute",
+          top: "20px",
+          right: "20px",
+          fontSize: "2rem",
+          color: "white",
+          background: "transparent",
+          border: "2px solid white",
+          borderRadius: "9999px",
+          width: "48px",
+          height: "48px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          cursor: "pointer",
+          zIndex: 1001,
+        }}
+      >
+        ✕
+      </button>
+
+      {/* Fullscreen video */}
+      <video
+        src={`${process.env.PUBLIC_URL}/ttc.mov`}
+        autoPlay
+        controls
+        style={{
+          width: "90%",
+          height: "90%",
+          objectFit: "contain",
+        }}
+      />
+    </div>
+  ) : (
     <div
       style={{
         transition: "transform 1s ease-in-out",
